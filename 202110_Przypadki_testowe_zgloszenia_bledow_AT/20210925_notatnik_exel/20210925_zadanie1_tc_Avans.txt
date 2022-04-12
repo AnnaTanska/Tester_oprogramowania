@@ -1,0 +1,39 @@
+Przypadek1: 
+TC001
+Nazwa: Rejestracja - happypath
+Opis: Sprawdzenie możliwości zarejestrowania się za pomocą poprawnych danych
+Warunki wstępne: użyktownik nie znajduje się w bazie
+Kroki:
+1. wejdź na www.avans.pl/registration
+2. Wypełnij polę Imię, np. "Anna"
+3. Wypełnij polę Nazwisko, np. "Nowak"
+4. wypełnij pole email, np. "annanowak@wp.pl"
+5. Wypełnij pole hasło, zawiera przynajmniej 8 znaków w tym co najmniej jedna Duża i mała litera oraz cyfra, np. "Test1234"
+6. Wypełnij pole powtórz hasło, "Test1234"
+7. Zaznacz pole "Oświadczam, że zapoznałem się z treścią regulaminu oraz akceptuje jego treść"
+7. Kliknij przysick "Zarejestruj się"
+Oczekiwany rezultat: Uzytkownik zostaje przekierowany na stronę główną, następuje zalogowanie do konta, w górnym pasku po prawej stronie pojawia 
+się rozwijany przycisk "Konto"
+
+TC002
+Nazwa: Logowanie - happypath
+Opis: Sprawdzenie możliwości zalowania się za pomocą danych konta istniejącego na bazie 
+Warunki wstępne: konto znajduje się w bazie
+Kroki:
+1. wejdź na www.avans.pl/login
+2. wypełnij pole email, np. "annanowak@wp.pl"
+3. Wypełnij pole hasło, przypisane do adresu email, "Test1234"
+4. Kliknij przysick "Zaloguj się"
+Oczekiwany rezultat: Uzytkownik zostaje przekierowany na stronę główną, następuje zalogowanie do konta, otwiera się strona główna i w górnym pasku po prawej stronie pojawia 
+się rozwijany przycisk "Konto"
+
+TC003
+Nazwa: Nieudane logowanie przy użyciu błędnego hasła 
+Opis: Sprawdzenie możliwości zalowania się przy użyciu błędnego hasła
+Warunki wstępne: konto znajduje się w bazie
+Kroki:
+1. wejdź na www.avans.pl/login
+2. wypełnij pole email, np. "annanowak@wp.pl"
+3. Wypełnij pole hasło
+4. Kliknij przysick "Zaloguj się"
+Oczekiwany rezultat: Pole hasło podświetla się na czerwono, wyświetla się komunikat "Nieprawdiłowy login lub hasło"
